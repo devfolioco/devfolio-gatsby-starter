@@ -6,4 +6,8 @@ const normalize = `
 
 export const GlobalStyles = createGlobalStyle`
   ${normalize};
+
+  body {
+    font-family: 'Muli', sans-serif;
+  }
 `;
