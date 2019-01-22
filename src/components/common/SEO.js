@@ -39,7 +39,7 @@ const SEO = () => {
 			<meta name="keywords" content={data.keywords.join(', ')} />
 			<meta name="author" content={data.author} />
 			<title>{data.title}</title>
-			<html lang="en" dir="ltr" />
+			<html lang="en" />
 		</Helmet>
   )
 }
