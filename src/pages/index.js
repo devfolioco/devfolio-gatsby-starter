@@ -1,9 +1,9 @@
-import React from 'react'
-import { Link } from 'gatsby'
+import React from 'react';
+import { Link } from 'gatsby';
 
-import Layout from 'common/Layout'
-import Image from 'common/Image'
-import SEO from 'common/SEO'
+import Layout from 'common/Layout';
+import Image from 'common/Image';
+import SEO from 'common/SEO';
 
 import ActivityIcon from 'static/icons/activity.svg';
 
@@ -18,9 +18,9 @@ const IndexPage = () => (
     </div>
     <div>
       Random icon here: <img src={ActivityIcon} alt="activity" />
-    </div>    
+    </div>
     <Link to="/page-2/">Go to page 2</Link>
   </Layout>
-)
+);
 
-export default IndexPage
+export default IndexPage;
