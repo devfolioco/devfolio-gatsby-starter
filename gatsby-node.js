@@ -1,3 +1,5 @@
+
+// Webpack aliases for commonly used paths
 exports.onCreateWebpackConfig = ({ actions }) => {
 	actions.setWebpackConfig({
 		resolve: {

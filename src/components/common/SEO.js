@@ -1,96 +1,48 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-import { StaticQuery, graphql } from 'gatsby'
 
-function SEO({ description, lang, meta, keywords, title }) {
+const data = {
+	description: 'SEO description here',
+	title: 'Title | Here',
+	url: 'http://site.com',
+	author: 'team',
+	keywords: ['gatsby', 'site'],
+	twitter: {
+		id: '@twitterid',
+		img: 'http://site.com/img/twitter.png',
+	},
+	facebook: {
+		id: '2342342',
+		img: 'http://site.com/img/facebook-og.png',
+	}
+};
+
+const SEO = () => {
   return (
-    <StaticQuery
-      query={detailsQuery}
-      render={data => {
-        const metaDescription =
-          description || data.site.siteMetadata.description
-        return (
-          <Helmet
-            htmlAttributes={{
-              lang,
-            }}
-            title={title}
-            titleTemplate={`%s | ${data.site.siteMetadata.title}`}
-            meta={[
-              {
-                name: `description`,
-                content: metaDescription,
-              },
-              {
-                property: `og:title`,
-                content: title,
-              },
-              {
-                property: `og:description`,
-                content: metaDescription,
-              },
-              {
-                property: `og:type`,
-                content: `website`,
-              },
-              {
-                name: `twitter:card`,
-                content: `summary`,
-              },
-              {
-                name: `twitter:creator`,
-                content: data.site.siteMetadata.author,
-              },
-              {
-                name: `twitter:title`,
-                content: title,
-              },
-              {
-                name: `twitter:description`,
-                content: metaDescription,
-              },
-            ]
-              .concat(
-                keywords.length > 0
-                  ? {
-                      name: `keywords`,
-                      content: keywords.join(`, `),
-                    }
-                  : []
-              )
-              .concat(meta)}
-          />
-        )
-      }}
-    />
+    <Helmet>
+			<meta property="fb:app_id" content={data.facebook.id} />
+			<meta property="og:title" content={data.title} />
+			<meta property="og:type" content="website" />
+			<meta property="og:url" content={data.url} />
+			<meta property="og:image" content={data.facebook.img} />
+			<meta property="og:description" content={data.description} />
+
+			<meta name="twitter:card" content="summary_large_image"/>
+			<meta name="twitter:creator" content="@hackinoutco"/>
+			<meta name="twitter:site" content="@hackinoutco"/>
+			<meta name="twitter:title" content={data.title} />
+			<meta name="twitter:description" content={data.description} />
+			<meta name="twitter:domain" content={data.url} />
+			<meta name="twitter:image:src" content={data.img} />
+
+			<meta name="description" content={data.description}/>
+			<meta name="keywords" content={data.keywords.join(', ')} />
+			<meta name="author" content={data.author} />
+			<title>{data.title}</title>
+			<html lang="en" dir="ltr" />
+		</Helmet>
   )
-}
-
-SEO.defaultProps = {
-  lang: `en`,
-  meta: [],
-  keywords: [],
-}
-
-SEO.propTypes = {
-  description: PropTypes.string,
-  lang: PropTypes.string,
-  meta: PropTypes.array,
-  keywords: PropTypes.arrayOf(PropTypes.string),
-  title: PropTypes.string.isRequired,
 }
 
 export default SEO
 
-const detailsQuery = graphql`
-  query DefaultSEOQuery {
-    site {
-      siteMetadata {
-        title
-        description
-        author
-      }
-    }
-  }
-`
