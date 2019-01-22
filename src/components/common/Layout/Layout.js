@@ -3,12 +3,12 @@ import PropTypes from 'prop-types';
 
 import Header from '../Header';
 
-import { Global } from './style';
+import { GlobalStyles } from './style';
 
 const Layout = ({ children }) => (
   <>
     <Header siteTitle="Site Title" />
-    <Global />
+    <GlobalStyles />
     <div
       style={{
         margin: `0 auto`,
