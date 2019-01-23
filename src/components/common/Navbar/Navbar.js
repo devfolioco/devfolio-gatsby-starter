@@ -1,9 +1,16 @@
 import React, { Component } from 'react';
 import Media from 'react-media';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
+import Scrollspy from 'react-scrollspy';
 
 import { Container } from 'components/global';
-import { Nav, NavItem, StyledContainer, NavList, MobileMenu } from './style';
+import {
+  Nav,
+  NavItem,
+  StyledContainer,
+  NavListWrapper,
+  MobileMenu,
+} from './style';
 
 const NAV_ITEMS = ['About', 'Sponsors', 'FAQ'];
 
@@ -28,12 +35,18 @@ class Navbar extends Component {
     </AnchorLink>
   );
 
-  getNavItems = () => (
-    <>
-      {NAV_ITEMS.map(navItem => (
-        <NavItem key={navItem}>{this.getNavAnchorLink(navItem)}</NavItem>
-      ))}
-    </>
+  getNavList = (mobile = false) => (
+    <NavListWrapper>
+      <Scrollspy
+        items={NAV_ITEMS.map(item => item.toLowerCase())}
+        currentClassName="active"
+        mobile={mobile}
+      >
+        {NAV_ITEMS.map(navItem => (
+          <NavItem key={navItem}>{this.getNavAnchorLink(navItem)}</NavItem>
+        ))}
+      </Scrollspy>
+    </NavListWrapper>
   );
 
   render() {
@@ -51,7 +64,7 @@ class Navbar extends Component {
                   <button onClick={this.toggleMobileMenu}> = </button>
                 </>
               ) : (
-                <NavList>{this.getNavItems()}</NavList>
+                <>{this.getNavList()}</>
               )
             }
           </Media>
@@ -59,9 +72,7 @@ class Navbar extends Component {
         <Media query="(max-width: 991px)">
           {mobileMenuOpen && (
             <MobileMenu>
-              <Container>
-                <NavList mobile>{this.getNavItems()}</NavList>
-              </Container>
+              <Container>{this.getNavList(true)}</Container>
             </MobileMenu>
           )}
         </Media>

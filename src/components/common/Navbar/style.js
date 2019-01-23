@@ -17,28 +17,40 @@ export const StyledContainer = styled(Container)`
   align-items: center;
 `;
 
-export const NavList = styled.ul`
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: row;
+export const NavListWrapper = styled.div`
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
 
-  ${({ mobile }) =>
-    mobile &&
-    `
-      flex-direction: column;
-      margin-top: 1em;
+    ${({ mobile }) =>
+      mobile &&
+      `
+        flex-direction: column;
+        margin-top: 1em;
 
-      > ${NavItem} {
-        margin: 0;
-        margin-top: 0.75em;
-      }
-    `};
+        > ${NavItem} {
+          margin: 0;
+          margin-top: 0.75em;
+        }
+      `};
+  }
 `;
 
 export const NavItem = styled.li`
   margin: 0 0.75em;
+
+  a {
+    text-decoration: none;
+  }
+
+  &.active {
+    a {
+      text-decoration: underline;
+    }
+  }
 `;
 
 export const MobileMenu = styled.div`

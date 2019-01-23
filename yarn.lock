@@ -2709,6 +2709,11 @@ class-utils@^0.3.5:
     isobject "^3.0.0"
     static-extend "^0.1.1"
 
+classnames@^2.2.5:
+  version "2.2.6"
+  resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.2.6.tgz#43935bffdd291f326dad0a205309b38d00f650ce"
+  integrity sha512-JR/iSQOSt+LQIWwrwEzJ9uk0xfN3mTVYMwt1Ir5mUcSN6pU+V4zQFFaJsclJbPuAUQH+yfWef6tm7l1quW3C8Q==
+
 cli-boxes@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/cli-boxes/-/cli-boxes-1.0.0.tgz#4fa917c3e59c94a004cd61f8ee509da651687143"
@@ -9238,6 +9243,15 @@ react-media@^1.9.2:
     "@babel/runtime" "^7.2.0"
     invariant "^2.2.2"
     json2mq "^0.2.0"
+    prop-types "^15.5.10"
+
+react-scrollspy@^3.3.5:
+  version "3.3.5"
+  resolved "https://registry.yarnpkg.com/react-scrollspy/-/react-scrollspy-3.3.5.tgz#e3e605bfc153a23f5fdf1279dd9f397d6e76e228"
+  integrity sha512-s2wAoFGgeArJ8bSpdxwWiZpVzHc+VN5K7996v35JysXXYqfqSHj+yhLpre6v5kQVAT4DFpTnnMOmrhZqfyxEgA==
+  dependencies:
+    babel-runtime "^6.26.0"
+    classnames "^2.2.5"
     prop-types "^15.5.10"
 
 react-side-effect@^1.1.0:
