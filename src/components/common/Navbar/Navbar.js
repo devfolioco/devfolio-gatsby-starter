@@ -21,10 +21,10 @@ class Navbar extends Component {
         <Link to="/about">About</Link>
       </NavItem>
       <NavItem>
-        <Link to="/contact">Contact</Link>
+        <Link to="/sponsors">Sponsors</Link>
       </NavItem>
       <NavItem>
-        <Link to="/sponsors">Sponsors</Link>
+        <Link to="/faq">FAQ</Link>
       </NavItem>
     </>
   );

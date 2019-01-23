@@ -3,8 +3,10 @@ import { Link } from 'gatsby';
 
 import Layout from 'common/Layout';
 import Image from 'common/Image';
-
 import { Container } from 'components/global';
+import About from 'components/sections/About';
+import Sponsors from 'components/sections/Sponsors';
+import FAQ from 'components/sections/FAQ';
 
 import ActivityIcon from 'static/icons/activity.svg';
 
@@ -22,6 +24,9 @@ const IndexPage = () => (
       </div>
       <Link to="/page-2/">Go to page 2</Link>
     </Container>
+    <About />
+    <Sponsors />
+    <FAQ />
   </Layout>
 );
 
