@@ -6,6 +6,9 @@ export const Nav = styled.nav`
   padding: 24px 0;
   background-color: white;
   border: 1px solid black;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 `;
 
 export const StyledContainer = styled(Container)`

@@ -5,26 +5,34 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { Container } from 'components/global';
 import { Nav, NavItem, StyledContainer, NavList, MobileMenu } from './style';
 
+const nav = ['About', 'Sponsors', 'FAQ'];
+
 class Navbar extends Component {
   state = {
     mobileMenuOpen: false,
   };
 
-  handleMenuButtonClick = () => {
+  toggleMobileMenu = () => {
     this.setState(prevState => ({ mobileMenuOpen: !prevState.mobileMenuOpen }));
   };
 
+  closeMobileMenu = () => {
+    if (this.state.mobileMenuOpen) {
+      this.setState({ mobileMenuOpen: false });
+    }
+  };
+
+  getNavAnchorLink = item => (
+    <AnchorLink href={`#${item.toLowerCase()}`} onClick={this.closeMobileMenu}>
+      {item}
+    </AnchorLink>
+  );
+
   getNavItems = () => (
     <>
-      <NavItem>
-        <AnchorLink href="#about">About</AnchorLink>
-      </NavItem>
-      <NavItem>
-        <AnchorLink href="#sponsors">Sponsors</AnchorLink>
-      </NavItem>
-      <NavItem>
-        <AnchorLink href="#faq">FAQ</AnchorLink>
-      </NavItem>
+      {nav.map(navItem => (
+        <NavItem key={navItem}>{this.getNavAnchorLink(navItem)}</NavItem>
+      ))}
     </>
   );
 
@@ -40,7 +48,7 @@ class Navbar extends Component {
             {matches =>
               matches ? (
                 <>
-                  <button onClick={this.handleMenuButtonClick}> = </button>
+                  <button onClick={this.toggleMobileMenu}> = </button>
                 </>
               ) : (
                 <NavList>{this.getNavItems()}</NavList>
