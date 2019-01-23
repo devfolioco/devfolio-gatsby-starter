@@ -1,16 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import Header from '../Header';
 import SEO from '../SEO';
 
 import { GlobalStyles } from './style';
+import Navbar from 'common/Navbar';
 
 const Layout = ({ children }) => (
   <>
     <SEO />
     <GlobalStyles />
-    <Header siteTitle="Site Title" />
+    <Navbar />
     {children}
   </>
 );
