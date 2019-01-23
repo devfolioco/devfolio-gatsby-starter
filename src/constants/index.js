@@ -1,2 +1,2 @@
-export { color } from './color';
-export { screen } from './screen';
+export { COLOR } from './color';
+export { SCREEN } from './screen';

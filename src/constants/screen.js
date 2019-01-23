@@ -1,4 +1,4 @@
-export const screen = {
+export const SCREEN = {
   xs: '576px',
   sm: '768px',
   md: '992px',
