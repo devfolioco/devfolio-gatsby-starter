@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import { Link } from 'gatsby';
 import Media from 'react-media';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 import { Container } from 'components/global';
-
 import { Nav, NavItem, StyledContainer, NavList, MobileMenu } from './style';
 
 class Navbar extends Component {
@@ -18,13 +17,13 @@ class Navbar extends Component {
   getNavItems = () => (
     <>
       <NavItem>
-        <Link to="/about">About</Link>
+        <AnchorLink href="#about">About</AnchorLink>
       </NavItem>
       <NavItem>
-        <Link to="/sponsors">Sponsors</Link>
+        <AnchorLink href="#sponsors">Sponsors</AnchorLink>
       </NavItem>
       <NavItem>
-        <Link to="/faq">FAQ</Link>
+        <AnchorLink href="#faq">FAQ</AnchorLink>
       </NavItem>
     </>
   );
