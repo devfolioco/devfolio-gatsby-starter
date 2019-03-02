@@ -8,6 +8,7 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-svgr`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -32,9 +33,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [
-          `muli\:400,700`, // you can also specify font weights and styles
-        ],
+        fonts: [`muli\:400,700`],
       },
     },
     {
