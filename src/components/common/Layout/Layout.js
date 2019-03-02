@@ -1,18 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { ThemeProvider } from 'styled-components';
 
 import SEO from '../SEO';
+import theme from '../../../theme';
 
 import { GlobalStyles } from './style';
 import Navbar from 'common/Navbar';
 
 const Layout = ({ children }) => (
-  <>
-    <SEO />
-    <GlobalStyles />
-    <Navbar />
-    {children}
-  </>
+  <ThemeProvider theme={theme}>
+    <>
+      <SEO />
+      <GlobalStyles />
+      <Navbar />
+      {children}
+    </>
+  </ThemeProvider>
 );
 
 Layout.propTypes = {
