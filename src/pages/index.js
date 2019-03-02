@@ -8,7 +8,7 @@ import About from '@sections/About';
 import Sponsors from '@sections/Sponsors';
 import FAQ from '@sections/FAQ';
 
-import ActivityIcon from '@static/icons/activity.svg';
+import { ReactComponent as ActivityIcon } from '@static/icons/activity.svg';
 
 const IndexPage = () => (
   <Layout>
@@ -20,7 +20,7 @@ const IndexPage = () => (
         <Image />
       </div>
       <div>
-        Random icon here: <img src={ActivityIcon} alt="activity" />
+        Random icon here: <ActivityIcon />
       </div>
       <Link to="/page-2/">Go to page 2</Link>
     </Container>
