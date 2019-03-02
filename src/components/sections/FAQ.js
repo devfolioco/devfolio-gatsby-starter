@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Section, Container } from 'components/global';
+import { Section, Container } from '@components/global';
 
 const FAQ = () => (
   <Section id="faq">

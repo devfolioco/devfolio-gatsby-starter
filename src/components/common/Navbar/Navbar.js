@@ -3,7 +3,7 @@ import Media from 'react-media';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import Scrollspy from 'react-scrollspy';
 
-import { Container } from 'components/global';
+import { Container } from '@components/global';
 import {
   Nav,
   NavItem,

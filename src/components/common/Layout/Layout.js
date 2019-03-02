@@ -6,7 +6,7 @@ import SEO from '../SEO';
 import theme from '../../../theme';
 
 import { GlobalStyles } from './style';
-import Navbar from 'common/Navbar';
+import Navbar from '@common/Navbar';
 
 const Layout = ({ children }) => (
   <ThemeProvider theme={theme}>

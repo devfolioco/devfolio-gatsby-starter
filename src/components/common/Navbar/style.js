@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { Container } from 'components/global';
+import { Container } from '@components/global';
 
 export const Nav = styled.nav`
   padding: 24px 0;
