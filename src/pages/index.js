@@ -6,7 +6,7 @@ import Image from '@common/Image';
 import { Container } from '@components/global';
 import About from '@sections/About';
 import Gallery from '@sections/Gallery';
-import FAQ from '@sections/FAQ';
+import Faq from '@sections/Faq';
 
 import { ReactComponent as ActivityIcon } from '@static/icons/activity.svg';
 
@@ -26,7 +26,7 @@ const IndexPage = () => (
     </Container>
     <About />
     <Gallery />
-    <FAQ />
+    <Faq />
   </Layout>
 );
 
