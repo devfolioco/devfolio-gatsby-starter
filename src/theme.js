@@ -1,7 +1,7 @@
 const theme = {
   font: {
-    primary: `'Now', Arial, san-serif`,
-    secondary: `'Muli', sans-serif`,
+    primary: `'Nunito Sans', Arial, san-serif`,
+    secondary: `'Montserrat', sans-serif`,
   },
   font_size: {
     small: 'font-size: 18px; line-height: 22px',
