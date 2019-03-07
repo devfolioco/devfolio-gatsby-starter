@@ -7,6 +7,7 @@ import { Container } from '@components/global';
 import About from '@sections/About';
 import Gallery from '@sections/Gallery';
 import Faq from '@sections/Faq';
+import Footer from '@sections/Footer';
 
 import { ReactComponent as ActivityIcon } from '@static/icons/activity.svg';
 
@@ -27,6 +28,7 @@ const IndexPage = () => (
     <About />
     <Gallery />
     <Faq />
+    <Footer />
   </Layout>
 );
 
