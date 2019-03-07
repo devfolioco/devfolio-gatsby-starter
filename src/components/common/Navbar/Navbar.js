@@ -12,7 +12,7 @@ import {
   MobileMenu,
 } from './style';
 
-const NAV_ITEMS = ['About', 'Sponsors', 'FAQ'];
+const NAV_ITEMS = ['About', 'Gallery', 'FAQ'];
 
 class Navbar extends Component {
   state = {

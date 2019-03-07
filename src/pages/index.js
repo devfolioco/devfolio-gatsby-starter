@@ -5,7 +5,7 @@ import Layout from '@common/Layout';
 import Image from '@common/Image';
 import { Container } from '@components/global';
 import About from '@sections/About';
-import Sponsors from '@sections/Sponsors';
+import Gallery from '@sections/Gallery';
 import FAQ from '@sections/FAQ';
 
 import { ReactComponent as ActivityIcon } from '@static/icons/activity.svg';
@@ -25,7 +25,7 @@ const IndexPage = () => (
       <Link to="/page-2/">Go to page 2</Link>
     </Container>
     <About />
-    <Sponsors />
+    <Gallery />
     <FAQ />
   </Layout>
 );
