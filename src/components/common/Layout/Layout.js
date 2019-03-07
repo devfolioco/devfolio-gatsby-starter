@@ -5,7 +5,7 @@ import { ThemeProvider } from 'styled-components';
 import SEO from '../SEO';
 import theme from '../../../theme';
 
-import { GlobalStyles } from './style';
+import GlobalStyles from '../../../GlobalStyles';
 import Navbar from '@common/Navbar';
 
 const Layout = ({ children }) => (
