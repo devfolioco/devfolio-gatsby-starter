@@ -13,6 +13,26 @@ const GlobalStyles = createGlobalStyle`
   body {
     font-family: 'Nunito Sans', sans-serif;
   }
+
+  h1, h2, h3 {
+    margin: 0;
+    font-weight: bold;
+  }
+
+  h1 {
+    ${props => props.theme.font_size.large};
+  }
+
+  h3 {
+    font-family: ${props => props.theme.font.secondary};
+    ${props => props.theme.font_size.small};
+    text-transform: uppercase;
+    color: ${props => props.theme.color.black.light};
+  }
+
+  p {
+    ${props => props.theme.font_size.regular};
+  }
 `;
 
 export default GlobalStyles;
