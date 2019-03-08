@@ -11,6 +11,10 @@ const GALLERY = [
     image: 'yoda.jpeg',
   },
   {
+    name: 'r2d2',
+    image: 'r2d2.jpeg',
+  },
+  {
     name: 'Darth Vader',
     image: 'darthvader.jpeg',
   },
@@ -21,6 +25,18 @@ const GALLERY = [
   {
     name: 'r2d2',
     image: 'r2d2.jpeg',
+  },
+  {
+    name: 'Yoda',
+    image: 'yoda.jpeg',
+  },
+  {
+    name: 'Stormtrooper',
+    image: 'stormtrooper.jpeg',
+  },
+  {
+    name: 'Darth Vader',
+    image: 'darthvader.jpeg',
   },
 ];
 
