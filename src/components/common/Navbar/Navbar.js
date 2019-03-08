@@ -7,10 +7,13 @@ import { Container } from '@components/global';
 import {
   Nav,
   NavItem,
+  LogoContainer,
   StyledContainer,
   NavListWrapper,
   MobileMenu,
 } from './style';
+
+import { ReactComponent as DevfolioLogo } from '@static/logo_devfolio.svg';
 
 const NAV_ITEMS = ['About', 'Gallery', 'FAQ'];
 
@@ -55,7 +58,9 @@ class Navbar extends Component {
     return (
       <Nav {...this.props}>
         <StyledContainer>
-          <div>Logo</div>
+          <LogoContainer>
+            <DevfolioLogo />
+          </LogoContainer>
 
           <Media query="(max-width: 991px)">
             {matches =>

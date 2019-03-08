@@ -3,9 +3,8 @@ import styled from 'styled-components';
 import { Container } from '@components/global';
 
 export const Nav = styled.nav`
-  padding: 24px 0;
-  background-color: white;
-  border: 1px solid black;
+  padding: 16px 0;
+  background-color: ${props => props.theme.color.blue.dark};
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -41,19 +40,32 @@ export const NavListWrapper = styled.div`
 
 export const NavItem = styled.li`
   margin: 0 0.75em;
+  font-family: ${props => props.theme.font.secondary};
+  ${props => props.theme.font_size.small};
+  text-transform: uppercase;
 
   a {
     text-decoration: none;
+    opacity: 0.7;
+    color: ${props => props.theme.color.white.regular};
   }
 
   &.active {
     a {
-      text-decoration: underline;
+      opacity: 1;
     }
   }
 `;
 
 export const MobileMenu = styled.div`
   width: 100%;
-  background: white;
+  background: ${props => props.theme.color.blue.dark};
+`;
+
+export const LogoContainer = styled.div`
+  max-width: 128px;
+
+  svg {
+    width: 100%;
+  }
 `;
