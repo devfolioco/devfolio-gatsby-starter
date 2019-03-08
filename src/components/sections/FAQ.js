@@ -39,7 +39,7 @@ const FAQS = [
 ];
 
 const Faq = () => (
-  <Section id="faq">
+  <Section id="faq" accent>
     <Container>
       <h1 style={{ marginBottom: 40 }}>Frequently Asked Questions</h1>
       <div>

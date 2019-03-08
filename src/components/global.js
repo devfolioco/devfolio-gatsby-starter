@@ -31,4 +31,7 @@ export const Container = styled.div`
 
 export const Section = styled.section`
   padding: 96px 0;
+
+  ${props =>
+    props.accent && `background-color: ${props.theme.color.black.lighter}`}
 `;

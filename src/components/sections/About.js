@@ -3,7 +3,7 @@ import React from 'react';
 import { Section, Container } from '@components/global';
 
 const About = () => (
-  <Section id="about">
+  <Section id="about" accent>
     <Container>
       <h3>about us</h3>
       <h1>About</h1>
