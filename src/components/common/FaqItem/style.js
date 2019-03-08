@@ -8,6 +8,7 @@ export const Wrapper = styled.div`
   .faq {
     border-radius: 5px;
     background-color: white;
+    margin: 16px 0;
   }
 
   .faq-title {
@@ -19,25 +20,26 @@ export const Wrapper = styled.div`
     text-align: left;
     cursor: pointer;
 
-    font-family: ${props => props.theme.font.primary};
+    font-family: ${props => props.theme.font.secondary};
+    font-weight: bold;
     padding: 32px;
     padding-right: 72px;
-    font-weight: 500;
     position: relative;
 
     &::after {
       content: '+';
       position: absolute;
       top: 30%;
-      right: 32px;
-      font-size: 32px;
+      right: 24px;
+      font-size: 24px;
+      font-weight: normal;
     }
 
     &.active {
       ::after {
         content: '-';
         top: 28%;
-        right: 36px;
+        right: 28px;
       }
     }
   }
