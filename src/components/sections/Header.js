@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 
 import Image from '@common/Image';
-import { Container } from '@components/global';
+import { Container, Button } from '@components/global';
 
 const About = () => (
   <header style={{ padding: '40px 0' }}>
@@ -17,7 +17,9 @@ const About = () => (
             Welcome to your new Gatsby site. <br /> Now go build something
             great.
           </p>
-          <Link to="/page-2/">Go to page 2</Link>
+          <Button as={Link} to="/page-2/">
+            Go to page 2 &nbsp; &rarr;
+          </Button>
         </div>
       </div>
     </Container>
