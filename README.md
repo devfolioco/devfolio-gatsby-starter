@@ -1,4 +1,4 @@
-# Devfolio gatsby-landing-page-starter
+# Devfolio gatsby-starter-landing
 
 Kickstart landing page development with GatsbyJS
 
