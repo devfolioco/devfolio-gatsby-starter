@@ -11,11 +11,11 @@ const GALLERY = [
     image: 'yoda.jpeg',
   },
   {
-    name: 'Darth',
+    name: 'Darth Vader',
     image: 'darthvader.jpeg',
   },
   {
-    name: 'Storm',
+    name: 'Stormtrooper',
     image: 'stormtrooper.jpeg',
   },
   {
@@ -45,7 +45,7 @@ const Gallery = () => (
     render={data => (
       <Section id="gallery">
         <Container>
-          <h1 style={{ padding: '200px 0' }}>Gallery</h1>
+          <h1 style={{ marginBottom: 40 }}>Gallery</h1>
           <Grid>
             {GALLERY.map(({ name, image }) => {
               const img = data.allFile.edges.find(

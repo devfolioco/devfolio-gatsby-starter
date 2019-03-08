@@ -7,32 +7,32 @@ import ExternalLink from '@common/ExternalLink';
 
 const FAQS = [
   {
-    title: 'How much do ETHGlobal hackathons cost?',
-    content: () => <>ETHGlobal hackathons are always free for hackers.</>,
-  },
-  {
-    title: 'How do I apply to a hackathon?',
-    content: () => (
-      <>Find the event you want to hack at above, and click "apply".</>
-    ),
-  },
-  {
-    title: 'What is ETHGlobal?',
+    title: 'What did Obi-Wan Kenobi say?',
     content: () => (
       <>
-        ETHGlobal helps run hackathons all over the world. Our goal is to be the
-        best on-ramp to the global Ethereum community. Our work is supported by
-        the Ethereum Foundation, and the many sponsors who make our events
-        possible.
+        If you define yourself by your power to take life, your desire to
+        dominate, to possess, then you have nothing.
       </>
     ),
   },
   {
-    title: 'Can my company sponsor an upcoming ETHGlobal hackathon?',
+    title: 'Jedi wisdom on love?',
     content: () => (
       <>
-        Absolutely! Please send all sponsorship inquiries to{' '}
-        <ExternalLink href="ethglobal.co">sponsor@ethglobal.co</ExternalLink>
+        Attachment is forbidden. Possession is forbidden. Compassion, which I
+        would define as unconditional love, is essential to a Jedi’s life. So
+        you might say, that we are encouraged to love.
+      </>
+    ),
+  },
+  {
+    title: 'Where did you even find these FAQs?',
+    content: () => (
+      <>
+        Ripped straight from{' '}
+        <ExternalLink href="https://www.starwars.com/news/40-memorable-star-wars-quotes">
+          here
+        </ExternalLink>
       </>
     ),
   },
@@ -41,7 +41,7 @@ const FAQS = [
 const Faq = () => (
   <Section id="faq">
     <Container>
-      <h1 style={{ padding: '200px 0' }}>FAQ</h1>
+      <h1 style={{ marginBottom: 40 }}>Frequently Asked Questions</h1>
       <div>
         {FAQS.map(({ title, content }) => (
           <FaqItem title={title} key={title}>
