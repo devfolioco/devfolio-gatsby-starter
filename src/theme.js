@@ -1,23 +1,33 @@
 const theme = {
   font: {
-    primary: `'Nunito Sans', Arial, san-serif`,
-    secondary: `'Montserrat', sans-serif`,
+    primary: `Nunito Sans, sans-serif`,
+    secondary: `Montserrat, sans-serif`,
   },
   font_size: {
-    small: 'font-size: 18px; line-height: 22px',
+    small: 'font-size: 14px; line-height: 22px',
     regular: 'font-size: 20px; line-height: 32px',
-    large: 'font-size: 24px; line-height: 35px',
+    large: 'font-size: 32px; line-height: 48px',
   },
   color: {
     white: {
-      regular: '#fff',
+      regular: '#FFFFFF',
+    },
+    blue: {
+      light: '#D9DDF2',
+      regular: '#3770FF',
+      dark: '#353576',
+    },
+    black: {
+      lighter: '#FAFBFB',
+      light: '#69757A',
+      regular: '#273339',
     },
   },
   screen: {
-    xs: '576px',
-    sm: '768px',
-    md: '992px',
-    lg: '1200px',
+    xs: '575px',
+    sm: '767px',
+    md: '991px',
+    lg: '1199px',
   },
 };
 
