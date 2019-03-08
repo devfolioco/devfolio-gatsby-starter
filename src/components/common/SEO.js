@@ -3,17 +3,17 @@ import Helmet from 'react-helmet';
 
 const SEO_DATA = {
   description: 'SEO description here',
-  title: 'Title | Here',
-  url: 'http://site.com',
+  title: 'Gatsby Landing Starter',
+  url: 'http://devfolio.co',
   author: 'team',
   keywords: ['gatsby', 'site'],
   twitter: {
-    id: '@twitterid',
-    img: 'http://site.com/img/twitter.png',
+    id: '@devfolioco',
+    img: '',
   },
   facebook: {
-    id: '2342342',
-    img: 'http://site.com/img/facebook-og.png',
+    id: '',
+    img: '',
   },
 };
 
