@@ -25,8 +25,14 @@ const SOCIAL = [
 
 const Footer = () => (
   <FooterWrapper>
-    <Container style={{ display: 'flex', justifyContent: 'space-between' }}>
-      <span>(c) Devfolio</span>
+    <Container
+      style={{
+        display: 'flex',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+      }}
+    >
+      <Copyright>(c) Devfolio</Copyright>
       <SocialIcons>
         {SOCIAL.map(({ icon, link }) => (
           <ExternalLink href={link}>{icon()}</ExternalLink>
@@ -40,6 +46,7 @@ const SocialIcons = styled.div`
   display: flex;
 
   svg {
+    color: ${props => props.theme.color.white.regular};
     margin: 0 8px;
     width: 24px;
     height: 24px;
@@ -47,8 +54,15 @@ const SocialIcons = styled.div`
 `;
 
 const FooterWrapper = styled.footer`
-  background-color: tomato;
+  background-color: ${props => props.theme.color.blue.dark};
   padding: 24px 0;
+`;
+
+const Copyright = styled.div`
+  font-family: ${props => props.theme.font.secondary};
+  ${props => props.theme.font_size.small};
+  text-transform: uppercase;
+  color: ${props => props.theme.color.white.regular};
 `;
 
 export default Footer;
