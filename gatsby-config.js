@@ -45,6 +45,7 @@ module.exports = {
           '@components': path.resolve(__dirname, 'src/components'),
           '@common': path.resolve(__dirname, 'src/components/common'),
           '@sections': path.resolve(__dirname, 'src/components/sections'),
+          '@styles': path.resolve(__dirname, 'src/styles/'),
           '@static': path.resolve(__dirname, 'static/'),
         },
       },
