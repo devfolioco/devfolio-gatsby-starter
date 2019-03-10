@@ -33,6 +33,14 @@ const GlobalStyles = createGlobalStyle`
   p {
     ${props => props.theme.font_size.regular};
   }
+
+  button {
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0;
+    cursor: pointer;
+  }
 `;
 
 export default GlobalStyles;
