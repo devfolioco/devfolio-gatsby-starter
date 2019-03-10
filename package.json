@@ -23,7 +23,6 @@
     "react-collapsible": "^2.6.0",
     "react-dom": "^16.6.3",
     "react-helmet": "^5.2.0",
-    "react-media": "^1.9.2",
     "react-scrollspy": "^3.3.5",
     "styled-components": "^4.1.3"
   },
@@ -33,10 +32,10 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
-    "start": "npm run develop",
+    "dev": "gatsby develop",
+    "start": "npm run dev",
     "format": "prettier --write \"src/**/*.js\"",
-    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
+    "clean": "rm -rf .cache && rm -rf public"
   },
   "devDependencies": {
     "prettier": "^1.15.2"

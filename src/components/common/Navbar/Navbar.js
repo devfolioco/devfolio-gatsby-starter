@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Media from 'react-media';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import Scrollspy from 'react-scrollspy';
 
@@ -11,6 +10,7 @@ import {
   StyledContainer,
   NavListWrapper,
   MobileMenu,
+  Mobile,
 } from './style';
 
 import { ReactComponent as DevfolioLogo } from '@static/logo_devfolio.svg';
@@ -38,8 +38,8 @@ class Navbar extends Component {
     </AnchorLink>
   );
 
-  getNavList = (mobile = false) => (
-    <NavListWrapper>
+  getNavList = ({ mobile = false }) => (
+    <NavListWrapper mobile={mobile}>
       <Scrollspy
         items={NAV_ITEMS.map(item => item.toLowerCase())}
         currentClassName="active"
@@ -62,25 +62,19 @@ class Navbar extends Component {
             <DevfolioLogo />
           </LogoContainer>
 
-          <Media query="(max-width: 991px)">
-            {matches =>
-              matches ? (
-                <>
-                  <button onClick={this.toggleMobileMenu}> = </button>
-                </>
-              ) : (
-                <>{this.getNavList()}</>
-              )
-            }
-          </Media>
+          <Mobile>
+            <button onClick={this.toggleMobileMenu}> = </button>
+          </Mobile>
+
+          <Mobile hide>{this.getNavList({})}</Mobile>
         </StyledContainer>
-        <Media query="(max-width: 991px)">
+        <Mobile>
           {mobileMenuOpen && (
             <MobileMenu>
-              <Container>{this.getNavList(true)}</Container>
+              <Container>{this.getNavList({ mobile: true })}</Container>
             </MobileMenu>
           )}
-        </Media>
+        </Mobile>
       </Nav>
     );
   }

@@ -5,7 +5,8 @@ import { Container } from '@components/global';
 export const Nav = styled.nav`
   padding: 16px 0;
   background-color: ${props => props.theme.color.blue.dark};
-  position: sticky;
+  position: fixed;
+  width: 100%;
   top: 0;
   z-index: 1000;
 `;
@@ -68,4 +69,22 @@ export const LogoContainer = styled.div`
   svg {
     width: 100%;
   }
+`;
+
+export const Mobile = styled.div`
+  display: none;
+
+  @media (max-width: ${props => props.theme.screen.md}) {
+    display: block;
+  }
+
+  ${props =>
+    props.hide &&
+    `
+    display: block;
+
+    @media (max-width: ${props.theme.screen.md}) {
+      display: none;
+    }
+  `}
 `;

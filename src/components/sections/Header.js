@@ -4,8 +4,8 @@ import { Link } from 'gatsby';
 import Image from '@common/Image';
 import { Container, Button } from '@components/global';
 
-const About = () => (
-  <header style={{ padding: '40px 0' }}>
+const Header = props => (
+  <header style={{ padding: '40px 0', marginTop: 80 }}>
     <Container>
       <div style={{ display: 'flex', alignItems: 'center' }}>
         <div style={{ width: 300 }}>
@@ -26,4 +26,4 @@ const About = () => (
   </header>
 );
 
-export default About;
+export default Header;
