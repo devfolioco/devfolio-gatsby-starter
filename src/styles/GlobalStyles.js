@@ -11,7 +11,7 @@ const GlobalStyles = createGlobalStyle`
   ${fonts};
 
   body {
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: ${props => props.theme.font.primary};
   }
 
   h1, h2, h3 {
