@@ -37,12 +37,6 @@ export const Section = styled.section`
 `;
 
 export const Button = styled.button`
-  margin: 0;
-  padding: 0;
-  background: none;
-  outline: none;
-  text-decoration: none;
-
   background-color: ${props => props.theme.color.blue.regular};
   color: ${props => props.theme.color.white.regular};
   padding: 8px 16px;
