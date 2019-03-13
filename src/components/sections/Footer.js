@@ -15,7 +15,7 @@ const SOCIAL = [
   },
   {
     icon: InstagramIcon,
-    link: 'instagram.com',
+    link: 'https://www.instagram.com/devfolioco/',
   },
   {
     icon: TwitterIcon,
