@@ -32,7 +32,7 @@ const Footer = () => (
         alignItems: 'center',
       }}
     >
-      <Copyright>(c) Devfolio</Copyright>
+      <Copyright>© Devfolio</Copyright>
       <SocialIcons>
         {SOCIAL.map(({ icon, link }) => (
           <ExternalLink href={link}>{icon()}</ExternalLink>
@@ -61,7 +61,6 @@ const FooterWrapper = styled.footer`
 const Copyright = styled.div`
   font-family: ${props => props.theme.font.secondary};
   ${props => props.theme.font_size.small};
-  text-transform: uppercase;
   color: ${props => props.theme.color.white.regular};
 `;
 
