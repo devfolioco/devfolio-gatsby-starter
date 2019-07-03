@@ -140,7 +140,7 @@ const Tab = styled(Button)`
 const List = styled.ul`
   list-style: none;
   padding: 0;
-  margin: 40px auto;
+  margin: 3rem auto;
   max-width: 800px;
 `;
 

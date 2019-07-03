@@ -47,7 +47,7 @@ const SocialIcons = styled.div`
 
   svg {
     color: ${props => props.theme.color.white.regular};
-    margin: 0 8px;
+    margin: 0 0.5rem;
     width: 24px;
     height: 24px;
   }
@@ -55,7 +55,7 @@ const SocialIcons = styled.div`
 
 const FooterWrapper = styled.footer`
   background-color: ${props => props.theme.color.blue.dark};
-  padding: 24px 0;
+  padding: 1.5rem 0;
 `;
 
 const Copyright = styled.div`

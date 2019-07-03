@@ -70,7 +70,7 @@ const Gallery = () => (
     render={data => (
       <Section id="gallery">
         <Container>
-          <h1 style={{ marginBottom: 40 }}>Gallery</h1>
+          <h1 style={{ marginBottom: '3rem' }}>Gallery</h1>
           <Grid>
             {GALLERY.map(({ name, image, url }) => {
               const img = data.allFile.edges.find(

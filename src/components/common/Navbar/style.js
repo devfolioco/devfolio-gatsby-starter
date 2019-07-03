@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { Container } from '@components/global';
 
 export const Nav = styled.nav`
-  padding: 16px 0;
+  padding: 1rem 0;
   background-color: ${props => props.theme.color.blue.dark};
   position: fixed;
   width: 100%;

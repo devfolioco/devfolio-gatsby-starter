@@ -8,7 +8,7 @@ export const Wrapper = styled.div`
   .faq {
     border-radius: 5px;
     background-color: white;
-    margin: 16px 0;
+    margin: 1em 0;
   }
 
   .faq-title {
@@ -22,8 +22,8 @@ export const Wrapper = styled.div`
 
     font-family: ${props => props.theme.font.secondary};
     font-weight: bold;
-    padding: 32px;
-    padding-right: 72px;
+    padding: 2rem;
+    padding-right: 5rem;
     position: relative;
 
     &::after {
@@ -45,7 +45,7 @@ export const Wrapper = styled.div`
   }
 
   .faq-content {
-    padding: 32px;
+    padding: 2rem;
     padding-top: 0;
     line-height: 26px;
   }

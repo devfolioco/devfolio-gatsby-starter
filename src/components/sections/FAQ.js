@@ -41,7 +41,7 @@ const FAQS = [
 const Faq = () => (
   <Section id="faq" accent>
     <Container>
-      <h1 style={{ marginBottom: 40 }}>Frequently Asked Questions</h1>
+      <h1 style={{ marginBottom: '3rem' }}>Frequently Asked Questions</h1>
       <div>
         {FAQS.map(({ title, content }) => (
           <FaqItem title={title} key={title}>
