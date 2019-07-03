@@ -29,7 +29,7 @@ const SPONSORS = [
 const Sponsors = () => (
   <Section id="sponsors">
     <Container>
-      <h1 style={{ marginBottom: 40 }}>Sponsors</h1>
+      <h1 style={{ marginBottom: '4rem', textAlign: 'center' }}>Sponsors</h1>
       <Flex>
         {SPONSORS.map(({ logo, link }) => (
           <Sponsor href={link} key={link}>
@@ -44,14 +44,15 @@ const Sponsors = () => (
 const Flex = styled.div`
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 `;
 
 const Sponsor = styled(ExternalLink)`
-  max-width: 280px;
+  max-width: 160px;
   margin-bottom: 2rem;
 
   &:not(:last-child) {
-    margin-right: 2.5rem;
+    margin-right: 4rem;
   }
 
   > svg {
