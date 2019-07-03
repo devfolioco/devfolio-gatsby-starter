@@ -6,6 +6,7 @@ import Navbar from '@common/Navbar';
 import Header from '@sections/Header';
 import About from '@sections/About';
 import Gallery from '@sections/Gallery';
+import Sponsors from '@sections/Sponsors';
 import Faq from '@sections/Faq';
 import Footer from '@sections/Footer';
 
@@ -15,6 +16,7 @@ const IndexPage = () => (
     <Header />
     <About />
     <Gallery />
+    <Sponsors />
     <Faq />
     <Footer />
   </Layout>
