@@ -16,7 +16,7 @@ const FAQS = [
     ),
   },
   {
-    title: 'Jedi wisdom on love?',
+    title: 'Why did Anakin mess up?',
     content: () => (
       <>
         Attachment is forbidden. Possession is forbidden. Compassion, which I
