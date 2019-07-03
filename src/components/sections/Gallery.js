@@ -4,39 +4,48 @@ import { StaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 
 import { Section, Container } from '@components/global';
+import ExternalLink from '@common/ExternalLink';
 
 const GALLERY = [
   {
     name: 'Yoda',
     image: 'yoda.jpeg',
+    url: 'https://twitter.com/yodaism',
   },
   {
     name: 'r2d2',
     image: 'r2d2.jpeg',
+    url: 'https://twitter.com/dan_abramov',
   },
   {
     name: 'Darth Vader',
     image: 'darthvader.jpeg',
+    url: 'https://twitter.com/darthvader',
   },
   {
     name: 'Stormtrooper',
     image: 'stormtrooper.jpeg',
+    url: 'https://twitter.com/dan_abramov',
   },
   {
     name: 'r2d2',
     image: 'r2d2.jpeg',
+    url: 'https://twitter.com/dan_abramov',
   },
   {
     name: 'Yoda',
     image: 'yoda.jpeg',
+    url: 'https://twitter.com/yodaism',
   },
   {
     name: 'Stormtrooper',
     image: 'stormtrooper.jpeg',
+    url: 'https://twitter.com/dan_abramov',
   },
   {
     name: 'Darth Vader',
     image: 'darthvader.jpeg',
+    url: 'https://twitter.com/darthvader',
   },
 ];
 
@@ -63,16 +72,16 @@ const Gallery = () => (
         <Container>
           <h1 style={{ marginBottom: 40 }}>Gallery</h1>
           <Grid>
-            {GALLERY.map(({ name, image }) => {
+            {GALLERY.map(({ name, image, url }) => {
               const img = data.allFile.edges.find(
                 ({ node }) => node.relativePath === image
               ).node;
 
               return (
-                <div>
+                <ExternalLink href={url}>
                   <Img fluid={img.childImageSharp.fluid} alt={name} />
                   <p>{name}</p>
-                </div>
+                </ExternalLink>
               );
             })}
           </Grid>
