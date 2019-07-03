@@ -13,7 +13,7 @@ import {
   Mobile,
 } from './style';
 
-import { ReactComponent as DevfolioLogo } from '@static/logo_devfolio.svg';
+import { ReactComponent as DevfolioLogo } from '@images/devfolio-white.svg';
 import { ReactComponent as MenuIcon } from '@static/icons/menu.svg';
 
 const NAV_ITEMS = ['About', 'Gallery', 'FAQ'];
