@@ -64,7 +64,7 @@ export const MobileMenu = styled.div`
 `;
 
 export const LogoContainer = styled.div`
-  max-width: 128px;
+  max-height: 64px;
 
   svg {
     width: 100%;
