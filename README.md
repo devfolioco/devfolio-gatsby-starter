@@ -2,6 +2,8 @@
 
 Kickstart landing page development with GatsbyJS
 
+[Live Demo](http://devfolio-gatsby-starter.surge.sh)
+
 ## Installation
 
 Install the dependencies:
