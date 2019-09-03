@@ -5,7 +5,7 @@ const fonts = `
     font-family: "Monsterrat";
     font-style: normal;
     font-weight: bold;
-    src: url(${MontserratBold}) format("ttf");
+    src: url(${MontserratBold}) format("truetype");
   }
 `;
 
