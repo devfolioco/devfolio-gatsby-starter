@@ -8,7 +8,7 @@ import About from '@sections/About';
 import Gallery from '@sections/Gallery';
 import Schedule from '@sections/Schedule';
 import Sponsors from '@sections/Sponsors';
-import Faq from '@sections/Faq';
+import Faq from '@sections/FAQ';
 import Footer from '@sections/Footer';
 
 const IndexPage = () => (
