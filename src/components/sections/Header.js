@@ -17,7 +17,7 @@ const Header = props => (
             Welcome to your new Gatsby site. <br /> Now go build something
             great.
           </p>
-          <Button as={Link} to="/page-2/">
+          <Button as={Link} to="/page-2/" style={{ textDecoration: 'none' }}>
             Go to page 2 &nbsp; &rarr;
           </Button>
         </div>
