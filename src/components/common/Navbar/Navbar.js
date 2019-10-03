@@ -15,6 +15,7 @@ import {
 
 import { ReactComponent as DevfolioLogo } from '@images/devfolio-white.svg';
 import { ReactComponent as MenuIcon } from '@static/icons/menu.svg';
+import { ReactComponent as MenuCloseIcon } from '@static/icons/x.svg';
 
 const NAV_ITEMS = ['About', 'Gallery', 'Schedule', 'Sponsors', 'FAQ'];
 
@@ -65,7 +66,7 @@ class Navbar extends Component {
 
           <Mobile>
             <button onClick={this.toggleMobileMenu} style={{ color: 'white' }}>
-              <MenuIcon />
+              {(mobileMenuOpen)? <MenuCloseIcon /> : <MenuIcon /> }
             </button>
           </Mobile>
 
