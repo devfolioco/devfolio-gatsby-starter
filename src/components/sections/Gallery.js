@@ -72,13 +72,13 @@ const Gallery = () => (
         <Container>
           <h1 style={{ marginBottom: '3rem' }}>Gallery</h1>
           <Grid>
-            {GALLERY.map(({ name, image, url }) => {
+            {GALLERY.map(({ name, image, url }, i) => {
               const img = data.allFile.edges.find(
                 ({ node }) => node.relativePath === image
               ).node;
 
               return (
-                <ExternalLink href={url}>
+                <ExternalLink href={url} key={i}>
                   <Img fluid={img.childImageSharp.fluid} alt={name} />
                   <p>{name}</p>
                 </ExternalLink>
