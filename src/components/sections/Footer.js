@@ -35,7 +35,7 @@ const Footer = () => (
       <Copyright>© Devfolio</Copyright>
       <SocialIcons>
         {SOCIAL.map(({ icon, link }) => (
-          <ExternalLink href={link}>{icon()}</ExternalLink>
+          <ExternalLink href={link} key={link}>{icon()}</ExternalLink>
         ))}
       </SocialIcons>
     </Container>

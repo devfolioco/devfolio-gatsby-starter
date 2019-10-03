@@ -101,6 +101,7 @@ class Schedule extends React.PureComponent {
                 onClick={() => this.handleClick(i + 1)}
                 active={activeDay === i + 1}
                 disabled={activeDay === i + 1}
+                key={i}
               >
                 {name}
               </Tab>
