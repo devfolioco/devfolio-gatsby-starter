@@ -30,7 +30,10 @@ export const Container = styled.div`
 `;
 
 export const Section = styled.section`
-  padding: 7rem 0;
+  padding: 1rem 0;
+  @media (min-width: ${props => props.theme.screen.md}) {
+    padding: 2rem 0;
+  }
 
   ${props =>
     props.accent && `background-color: ${props.theme.color.black.lighter}`}

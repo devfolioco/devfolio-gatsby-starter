@@ -1,0 +1,21 @@
+.header{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.gallery{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.gallery > a{
+    display:block;
+    text-decoration: none;
+    color: inherit;
+    max-width:340px;
+    width:90%;
+    text-align:center;    
+}

@@ -1,5 +1,4 @@
 import React from 'react';
-import styled from 'styled-components';
 import { StaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 
@@ -71,7 +70,7 @@ const Gallery = () => (
       <Section id="gallery">
         <Container>
           <h1 style={{ marginBottom: '3rem' }}>Gallery</h1>
-          <Grid>
+          <div className="gallery">
             {GALLERY.map(({ name, image, url }) => {
               const img = data.allFile.edges.find(
                 ({ node }) => node.relativePath === image
@@ -84,22 +83,11 @@ const Gallery = () => (
                 </ExternalLink>
               );
             })}
-          </Grid>
+          </div>
         </Container>
       </Section>
     )}
   />
 );
-
-const Grid = styled.div`
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 200px);
-  grid-gap: 24px;
-
-  > a {
-    text-decoration: none;
-    color: inherit;
-  }
-`;
 
 export default Gallery;

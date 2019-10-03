@@ -92,7 +92,7 @@ class Schedule extends React.PureComponent {
     return (
       <Section id="schedule" accent>
         <Container>
-          <h1 style={{ marginBottom: '4rem', textAlign: 'center' }}>
+          <h1 style={{ marginBottom: '2rem', textAlign: 'center' }}>
             Schedule
           </h1>
           <Tabs num={SCHEDULE.length}>
@@ -121,13 +121,14 @@ class Schedule extends React.PureComponent {
 }
 
 const Tabs = styled.div`
-  display: grid;
-  grid-template-columns: ${props => `repeat(${props.num}, 200px)`};
-  grid-gap: 32px;
+  display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 `;
 
 const Tab = styled(Button)`
+  margin: 10px;
+  padding: 10px 4rem;
   background-color: ${props =>
     props.theme.color.blue[props.active ? 'dark' : 'regular']};
 

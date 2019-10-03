@@ -29,7 +29,7 @@ const SPONSORS = [
 const Sponsors = () => (
   <Section id="sponsors">
     <Container>
-      <h1 style={{ marginBottom: '4rem', textAlign: 'center' }}>Sponsors</h1>
+      <h1 style={{ marginBottom: '2rem', textAlign: 'center' }}>Sponsors</h1>
       <Flex>
         {SPONSORS.map(({ logo, link }) => (
           <Sponsor href={link} key={link}>
@@ -49,11 +49,13 @@ const Flex = styled.div`
 
 const Sponsor = styled(ExternalLink)`
   max-width: 160px;
-  margin-bottom: 2rem;
+  margin: 1rem;
 
-  &:not(:last-child) {
-    margin-right: 4rem;
-  }
+  @media (min-width: ${props => props.theme.screen.md}) {
+    &:not(:last-child) {
+      margin-right: 4rem;
+    }
+  }  
 
   > svg {
     width: 100%;
