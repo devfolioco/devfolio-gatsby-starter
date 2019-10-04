@@ -21,6 +21,9 @@ Production build to `/public`:
 Cleanup cache (often fixes misc errors when run before `yarn dev`):
 
 ### `yarn clean`
+Format code
+
+### `yarn format`
 
 ## Content
 
