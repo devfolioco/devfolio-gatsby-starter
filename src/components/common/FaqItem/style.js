@@ -27,7 +27,7 @@ export const Wrapper = styled.div`
     position: relative;
 
     &::after {
-      content: '+';
+      content: 'v';
       position: absolute;
       top: 30%;
       right: 24px;
@@ -37,7 +37,7 @@ export const Wrapper = styled.div`
 
     &.active {
       ::after {
-        content: '-';
+        content: '^';
         top: 28%;
         right: 28px;
       }
