@@ -107,7 +107,9 @@ class Schedule extends React.PureComponent {
               </Tab>
             ))}
           </Tabs>
+
           <List>
+          <h2 style={{marginLeft: '0.2rem'}}>Day {activeDay}</h2>
             {SCHEDULE[activeDay - 1].value.map(({ time, label }) => (
               <Item key={time}>
                 <Time>{time}</Time>
