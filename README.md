@@ -4,28 +4,28 @@ Kickstart landing page development with GatsbyJS
 
 [Live Demo](http://devfolio-gatsby-starter.surge.sh)
 
-## Installation
+## Local Set Up & Installation
 
-Install the dependencies:
+1. Install dependencies
 
-### `yarn install`
+   `yarn install`
 
-Run the development server:
+2. Run the development server
 
-### `yarn dev`
+   `yarn dev`
 
-Production build to `/public`:
+3. Production build to `/public` directory
 
-### `yarn build`
+   `yarn build`
 
-Cleanup cache (often fixes misc errors when run before `yarn dev`):
+4. Cleanup cache (often fixes misc errors when run before the `yarn dev` command)
 
-### `yarn clean`
+   `yarn clean`
 
 ## Content
 
-Each of the sections in the site are placed in `src/sections`. Data is usually separated out into objects/arrays to be rendered by the component.
+Each section in the site are placed within `src/sections`. Data is usually separated out into objects/arrays to be rendered by a component.
 
 ## SEO
 
-The component `src/components/common/SEO.js` handles all meta data and SEO content, modify the `SEO_DATA` variable to add the data automatically. For application manifest data and favicon, modify the `gatsby-plugin-manifest` configuration in `gatsby-config.js`.
+The component `src/components/common/SEO.js` handles all metadata and SEO content, modify the `SEO_DATA` variable to add the data automatically. For application manifest data and favicon icons, modify the `gatsby-plugin-manifest` configuration in `gatsby-config.js`.
