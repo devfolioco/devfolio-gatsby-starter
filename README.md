@@ -1,3 +1,7 @@
+# A very warm welcome to you !
+
+## Let's get started:
+
 # Devfolio gatsby-starter-landing
 
 Kickstart landing page development with GatsbyJS
