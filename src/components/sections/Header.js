@@ -1,16 +1,17 @@
 import React from 'react';
+import styled from 'styled-components';
 import { Link } from 'gatsby';
 
 import Image from '@common/Image';
 import { Container, Button } from '@components/global';
 
-const Header = props => (
-  <header style={{ padding: '3rem 0', marginTop: '5rem' }}>
+const Header = () => (
+  <HeaderWrapper>
     <Container>
       <div style={{ display: 'flex', alignItems: 'center' }}>
-        <div style={{ width: 300 }}>
+        <ImageWrapper>
           <Image />
-        </div>
+        </ImageWrapper>
         <div style={{ padding: '4rem' }}>
           <h1>Hi people</h1>
           <p>
@@ -23,7 +24,16 @@ const Header = props => (
         </div>
       </div>
     </Container>
-  </header>
+  </HeaderWrapper>
 );
+
+const HeaderWrapper = styled.div`
+  padding: 3rem 0;
+  margin-top: 5rem;
+`;
+
+const ImageWrapper = styled.div`
+  width: 300;
+`;
 
 export default Header;
