@@ -29,6 +29,10 @@ const GlobalStyles = createGlobalStyle`
     text-transform: uppercase;
     color: ${props => props.theme.color.black.light};
   }
+  
+  a {
+    text-decoration: none;
+  }
 
   p {
     ${props => props.theme.font_size.regular};
