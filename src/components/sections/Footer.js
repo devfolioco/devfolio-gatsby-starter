@@ -11,14 +11,17 @@ import { ReactComponent as TwitterIcon } from '@static/icons/twitter.svg';
 const SOCIAL = [
   {
     icon: GithubIcon,
+    label: 'Follow on GitHub',
     link: 'https://github.com/devfolioco/',
   },
   {
     icon: InstagramIcon,
+    label: 'Follow on Instagram',
     link: 'https://www.instagram.com/devfolioco/',
   },
   {
     icon: TwitterIcon,
+    label: 'Follow on Twitter',
     link: 'https://twitter.com/devfolioco',
   },
 ];
@@ -34,8 +37,8 @@ const Footer = () => (
     >
       <Copyright>© Devfolio</Copyright>
       <SocialIcons>
-        {SOCIAL.map(({ icon, link }) => (
-          <ExternalLink href={link} key={link}>{icon()}</ExternalLink>
+        {SOCIAL.map(({ icon: Icon, label, link }) => (
+          <ExternalLink href={link} key={link} aria-label={label}><Icon aria-hidden={true} /></ExternalLink>
         ))}
       </SocialIcons>
     </Container>
