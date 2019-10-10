@@ -5,6 +5,9 @@
   "version": "0.1.0",
   "author": "Ajay NS <ajay.ns@outlook.com>",
   "dependencies": {
+    "@hapi/hoek": "^8.3.0",
+    "@hapi/joi": "^16.1.7",
+    "@hapi/topo": "^4.0.0",
     "@svgr/webpack": "^4.1.0",
     "gatsby": "^2.0.76",
     "gatsby-image": "^2.0.20",
