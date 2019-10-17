@@ -126,6 +126,11 @@ const Tabs = styled.div`
   grid-template-columns: ${props => `repeat(${props.num}, 200px)`};
   grid-gap: 32px;
   justify-content: center;
+  @media (max-width: ${props => props.theme.screen.sm}) {
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-gap: 1em;
+  }
 `;
 
 const Tab = styled(Button)`
