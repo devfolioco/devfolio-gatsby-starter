@@ -18,7 +18,7 @@ Production build to `/public`:
 
 ### `yarn build`
 
-Cleanup cache (often fixes misc errors when run before `yarn dev`):
+Cleanup cache (often fixes miscellaneous errors when run before `yarn dev`):
 
 ### `yarn clean`
 
