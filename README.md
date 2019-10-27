@@ -8,19 +8,19 @@ Kickstart landing page development with GatsbyJS
 
 Install the dependencies:
 
-### `yarn install`
+### `YARN INSTALL`
 
 Run the development server:
 
-### `yarn dev`
+### `YARN DEV`
 
 Production build to `/public`:
 
-### `yarn build`
+### `YARN BUILD`
 
 Cleanup cache (often fixes misc errors when run before `yarn dev`):
 
-### `yarn clean`
+### `YARN CLEAN`
 
 ## Content
 
