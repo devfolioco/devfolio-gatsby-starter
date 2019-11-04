@@ -18,7 +18,7 @@ Production build to `/public`:
 
 ### `yarn build`
 
-Cleanup cache (often fixes misc errors when run before `yarn dev`):
+Cleanup cache (often fixes miscellaneous errors when run before `yarn dev`):
 
 ### `yarn clean`
 
@@ -28,7 +28,8 @@ Each of the sections in the site are placed in `src/sections`. Data is usually s
 
 ## SEO
 
-The component `src/components/common/SEO.js` handles all meta data and SEO content, modify the `SEO_DATA` variable to add the data automatically. For application manifest data and favicon, modify the `gatsby-plugin-manifest` configuration in `gatsby-config.js`.
+The component `src/components/common/SEO.js` handles all metadata and SEO content. Modify the `SEO_DATA` variable to add the data automatically. For application manifest data and favicon, modify the `gatsby-plugin-manifest` configuration in `gatsby-config.js`.
 
-## LICENSE
+## License
+
 [MIT](https://github.com/devfolioco/devfolio-gatsby-starter/blob/master/LICENSE)

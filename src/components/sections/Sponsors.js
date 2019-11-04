@@ -9,19 +9,23 @@ import { ReactComponent as DevfolioLogo } from '@images/sponsors/devfolio-logo.s
 
 const SPONSORS = [
   {
+    label: 'Devfolio',
     logo: DevfolioLogo,
     link: 'https://devfolio.co',
   },
   {
     logo: DevfolioLogo,
+    label: 'Devfolio',
     link: 'https://devfolio.co/hackathons',
   },
   {
     logo: DevfolioLogo,
+    label: 'Devfolio',
     link: 'https://devfolio.co/profile',
   },
   {
     logo: DevfolioLogo,
+    label: 'Devfolio',
     link: 'https://inout.devfolio.co',
   },
 ];
@@ -31,9 +35,9 @@ const Sponsors = () => (
     <Container>
       <h1 style={{ marginBottom: '4rem', textAlign: 'center' }}>Sponsors</h1>
       <Flex>
-        {SPONSORS.map(({ logo, link }) => (
-          <Sponsor href={link} key={link}>
-            {logo()}
+        {SPONSORS.map(({ logo: Logo, label, link }) => (
+          <Sponsor href={link} key={link} aria-label={label}>
+            <Logo aria-hidden="true" />
           </Sponsor>
         ))}
       </Flex>
