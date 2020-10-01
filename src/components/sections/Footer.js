@@ -35,7 +35,10 @@ const Footer = () => (
         alignItems: 'center',
       }}
     >
-      <Copyright>© Devfolio</Copyright>
+      <div>
+        <Copyright>© Devfolio</Copyright>
+        <CopyrightDesc>Kickstart landing page development with GatsbyJS</CopyrightDesc>
+      </div>
       <SocialIcons>
         {SOCIAL.map(({ icon: Icon, label, link }) => (
           <ExternalLink href={link} key={link} aria-label={label}><Icon aria-hidden={true} /></ExternalLink>
@@ -65,6 +68,12 @@ const Copyright = styled.div`
   font-family: ${props => props.theme.font.secondary};
   ${props => props.theme.font_size.small};
   color: ${props => props.theme.color.white.regular};
+`;
+
+const CopyrightDesc = styled.div`
+  font-family: ${props => props.theme.font.secondary};
+  ${props => props.theme.font_size.small};
+  color: ${props => props.theme.color.gray.regular};
 `;
 
 export default Footer;
