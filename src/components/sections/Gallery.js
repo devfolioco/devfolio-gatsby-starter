@@ -93,7 +93,7 @@ const Gallery = () => (
 
 const Grid = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fill, 200px);
+  grid-template-columns: repeat(auto-fill, 175px);
   grid-gap: 24px;
 
   > a {
