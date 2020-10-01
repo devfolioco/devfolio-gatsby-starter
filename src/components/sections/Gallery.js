@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { StaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
+import LazyLoad from 'react-lazyload';
 
 import { Section, Container } from '@components/global';
 import ExternalLink from '@common/ExternalLink';
@@ -69,23 +70,25 @@ const Gallery = () => (
     `}
     render={data => (
       <Section id="gallery">
-        <Container>
-          <h1 style={{ marginBottom: '3rem' }}>Gallery</h1>
-          <Grid>
-            {GALLERY.map(({ name, image, url }, i) => {
-              const img = data.allFile.edges.find(
-                ({ node }) => node.relativePath === image
-              ).node;
+        <LazyLoad>
+          <Container>
+            <h1 style={{ marginBottom: '3rem' }}>Gallery</h1>
+            <Grid>
+              {GALLERY.map(({ name, image, url }, i) => {
+                const img = data.allFile.edges.find(
+                  ({ node }) => node.relativePath === image
+                ).node;
 
-              return (
-                <ExternalLink href={url} key={i}>
-                  <Img fluid={img.childImageSharp.fluid} alt={name} />
-                  <p>{name}</p>
-                </ExternalLink>
-              );
-            })}
-          </Grid>
-        </Container>
+                return (
+                  <ExternalLink href={url} key={i}>
+                    <Img fluid={img.childImageSharp.fluid} alt={name} />
+                    <p>{name}</p>
+                  </ExternalLink>
+                );
+              })}
+            </Grid>
+          </Container>
+        </LazyLoad>
       </Section>
     )}
   />
