@@ -12,7 +12,7 @@ Install the dependencies:
 yarn install
 ```
 
-Run the development server:
+Run the Development Server:
 
 ```
 yarn dev
