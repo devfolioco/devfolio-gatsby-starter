@@ -5,8 +5,8 @@ import { Section, Container } from '@components/global';
 const About = () => (
   <Section id="about" accent>
     <Container>
-      <h3>about us</h3>
       <h1>About</h1>
+      <h3>about us</h3>
       <p>
         The Sith killed each other, victims of their own greed. But from the
         ashes of their destruction, I was the last survivor. I chose to pass my

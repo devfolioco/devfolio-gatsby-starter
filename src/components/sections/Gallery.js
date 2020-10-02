@@ -47,6 +47,12 @@ const GALLERY = [
     image: 'darthvader.jpeg',
     url: 'https://twitter.com/darthvader',
   },
+  {
+    name: 'Obi Wan',
+    image: 'obi-wan.jpg',
+    url: 'https://twitter.com/obiwan',
+  },
+
 ];
 
 const Gallery = () => (

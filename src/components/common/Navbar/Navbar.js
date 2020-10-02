@@ -17,7 +17,7 @@ import { ReactComponent as DevfolioLogo } from '@images/devfolio-white.svg';
 import { ReactComponent as MenuIcon } from '@static/icons/menu.svg';
 import { ReactComponent as MenuCloseIcon } from '@static/icons/x.svg';
 
-const NAV_ITEMS = ['About', 'Gallery', 'Schedule', 'Sponsors', 'FAQ'];
+const NAV_ITEMS = ['About', 'Gallery', 'Schedule', 'Sponsors', 'FAQ', 'Contact Us'];
 
 class Navbar extends Component {
   state = {
