@@ -16,6 +16,7 @@ import {
 import { ReactComponent as DevfolioLogo } from '@images/devfolio-white.svg';
 import { ReactComponent as MenuIcon } from '@static/icons/menu.svg';
 import { ReactComponent as MenuCloseIcon } from '@static/icons/x.svg';
+import { Link } from 'gatsby';
 
 const NAV_ITEMS = ['About', 'Gallery', 'Schedule', 'Sponsors', 'FAQ'];
 
@@ -61,7 +62,9 @@ class Navbar extends Component {
       <Nav {...this.props}>
         <StyledContainer>
           <LogoContainer aria-label="Devfolio Logo">
-            <DevfolioLogo aria-hidden="true" />
+            <Link to="/">
+              <DevfolioLogo aria-hidden="true"/>
+            </Link>
           </LogoContainer>
 
           <Mobile>
