@@ -1,0 +1,18 @@
+def maxArr(self, A):
+        n = len(A)
+        
+        min1 = float('inf')
+        min2 = float('inf')
+        max1 = float('-inf')
+        max2 = float('-inf')
+
+        for i in range(n):
+            min1 = min(A[i] - i, min1)
+            min2 = min(A[i] + i, min2)
+            
+            max1 = max(A[i] - i, max1)
+            max2 = max(A[i] + i, max2)
+        
+        ans = max(max2 - min2, max1 - min1)
+
+        return ans
