@@ -44,6 +44,7 @@ const GlobalStyles = createGlobalStyle`
     outline: none;
     padding: 0;
     cursor: pointer;
+    text-decoration: none;
   }
 `;
 
