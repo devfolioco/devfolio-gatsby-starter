@@ -61,12 +61,14 @@ class Navbar extends Component {
       <Nav {...this.props}>
         <StyledContainer>
           <LogoContainer aria-label="Devfolio Logo">
-            <DevfolioLogo aria-hidden="true" />
+            <AnchorLink href="#header">
+              <DevfolioLogo aria-hidden="true" />
+            </AnchorLink>
           </LogoContainer>
 
           <Mobile>
             <button onClick={this.toggleMobileMenu} style={{ color: 'white' }}>
-              {(mobileMenuOpen)? <MenuCloseIcon /> : <MenuIcon /> }
+              {mobileMenuOpen ? <MenuCloseIcon /> : <MenuIcon />}
             </button>
           </Mobile>
 
