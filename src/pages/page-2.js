@@ -14,9 +14,18 @@ const SecondPage = () => (
     <Container>
       <Header />
       <Ideas />
-      <Button as={Link} to="/" style={{ textDecoration: 'none' }}>
-            Go back to home page &nbsp; &rarr;
+      <div style={{ display: 'flex', alignItems: 'center' }}>
+        <div style={{ width: 250 }}>
+          <Button as={Link} to="/" style={{ textDecoration: 'none' }}>
+            Go back to home page &rarr;
       </Button>
+        </div>
+        <div style={{ padding: '2rem' }}>
+          <Button as={Link} to="/quotes/" style={{ textDecoration: 'none' }}>
+            Go to page of quotes &nbsp; &rarr;
+      </Button>
+       </div>
+      </div>
       <Footer />
     </Container>
   </Layout>
