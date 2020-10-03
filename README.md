@@ -1,10 +1,10 @@
-# Devfolio gatsby-starter-landing
+# Devfolio gatsby-starter-Landing
 
 Kickstart landing page development with GatsbyJS
 
 [Live Demo](http://devfolio-gatsby-starter.surge.sh)
 
-## Installation
+## Installation: AQwik Start
 
 Install the dependencies:
 
