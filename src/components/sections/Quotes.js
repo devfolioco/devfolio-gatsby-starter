@@ -20,6 +20,7 @@ const About = () => (
       <li>Enter your favorite</li>
       <li>Enter your favorite</li>
       <li>Enter your favorite</li>
+      <li>Enter your favorite</li>   
       <li>Enter your favorite</li>
       </ul>
     </Container>
