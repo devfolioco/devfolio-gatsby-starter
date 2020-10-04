@@ -10,6 +10,7 @@ import Schedule from '@sections/Schedule';
 import Sponsors from '@sections/Sponsors';
 import Faq from '@sections/Faq';
 import Footer from '@sections/Footer';
+import Contact from '@sections/Contact';
 
 const IndexPage = () => (
   <Layout>
@@ -20,6 +21,7 @@ const IndexPage = () => (
     <Schedule />
     <Sponsors />
     <Faq />
+    <Contact />
     <Footer />
   </Layout>
 );

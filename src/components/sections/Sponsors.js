@@ -28,16 +28,18 @@ const SPONSORS = [
     label: 'Devfolio',
     link: 'https://inout.devfolio.co',
   },
+  
 ];
 
 const Sponsors = () => (
   <Section id="sponsors">
+    
     <Container>
       <h1 style={{ marginBottom: '4rem', textAlign: 'center' }}>Sponsors</h1>
       <Flex>
         {SPONSORS.map(({ logo: Logo, label, link }) => (
           <Sponsor href={link} key={link} aria-label={label}>
-            <Logo aria-hidden="true" />
+          <Logo aria-hidden="true" /> 
           </Sponsor>
         ))}
       </Flex>

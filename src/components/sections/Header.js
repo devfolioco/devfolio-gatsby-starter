@@ -11,12 +11,17 @@ const Header = props => (
         <div style={{ width: 300 }}>
           <Image />
         </div>
+ 
         <div style={{ padding: '4rem' }}>
-          <h1>Hi people</h1>
+            <div style={{ padding: '2rem' }}>
+          <h1>Hi people,</h1>
           <p>
             Welcome to your new Gatsby site. <br /> Now go build something
             great.
+            
           </p>
+            </div>
+    
           <Button as={Link} to="/page-2/" style={{ textDecoration: 'none' }}>
             Go to page 2 &nbsp; &rarr;
           </Button>
