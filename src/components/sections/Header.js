@@ -18,7 +18,7 @@ const Header = props => (
             great.
           </p>
           <Button as={Link} to="/page-2/" style={{ textDecoration: 'none' }}>
-            Go to page 2 &nbsp; &rarr;
+            Go to Idea Generation page &nbsp; &rarr;
           </Button>
         </div>
       </div>
