@@ -12,6 +12,9 @@ const theme = {
     white: {
       regular: '#FFFFFF',
     },
+    gray: {
+      regular: '#ACACAC',
+    },
     blue: {
       light: '#D9DDF2',
       regular: '#3770FF',
