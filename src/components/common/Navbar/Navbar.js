@@ -61,7 +61,7 @@ class Navbar extends Component {
       <Nav {...this.props}>
         <StyledContainer>
           <LogoContainer aria-label="Devfolio Logo">
-            <DevfolioLogo aria-hidden="true" />
+            <Link to="/"><DevfolioLogo aria-hidden="true" /></Link>
           </LogoContainer>
 
           <Mobile>
