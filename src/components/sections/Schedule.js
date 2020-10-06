@@ -86,6 +86,8 @@ class Schedule extends React.PureComponent {
   }
 
   handleClick = active => this.setState({ activeDay: active });
+  changeBackground = e => e.target.style.background = '#FFF';
+  revertBackground = e => e.target.style.background = 'inherit';
 
   render() {
     const { activeDay } = this.state;
@@ -111,7 +113,7 @@ class Schedule extends React.PureComponent {
           <List>
           <h2 style={{marginLeft: '0.2rem'}}>Day {activeDay}</h2>
             {SCHEDULE[activeDay - 1].value.map(({ time, label }) => (
-              <Item key={time}>
+              <Item key={time} onMouseEnter={this.changeBackground} onMouseLeave={this.revertBackground}>>
                 <Time>{time}</Time>
                 <div>{label}</div>
               </Item>
