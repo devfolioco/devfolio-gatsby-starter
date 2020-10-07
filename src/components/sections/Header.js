@@ -5,7 +5,7 @@ import Image from '@common/Image';
 import { Container, Button } from '@components/global';
 
 const Header = props => (
-  <header style={{ padding: '3rem 0', marginTop: '5rem' }}>
+  <header id="header" style={{ padding: '3rem 0', marginTop: '5rem' }}>
     <Container>
       <div style={{ display: 'flex', alignItems: 'center' }}>
         <div style={{ width: 300 }}>
