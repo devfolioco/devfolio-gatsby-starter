@@ -1,6 +1,7 @@
 {
   "ci": {
     "collect": {
+      "url": ["http://localhost/", "http://localhost/404/", "http://localhost/page-2"],
       "staticDistDir": "./public"
     },
     "assert": {
