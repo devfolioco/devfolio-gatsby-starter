@@ -6,6 +6,7 @@ import SEO from '@common/SEO';
 
 import theme from '@styles/theme';
 import GlobalStyles from '@styles/GlobalStyles';
+import ScrollTop from "./scrolltop"
 
 const Layout = ({ children }) => (
   <ThemeProvider theme={theme}>
@@ -13,6 +14,7 @@ const Layout = ({ children }) => (
       <SEO />
       <GlobalStyles />
       {children}
+      <ScrollTop/>
     </>
   </ThemeProvider>
 );
