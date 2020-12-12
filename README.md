@@ -41,3 +41,10 @@ The component `src/components/common/SEO.js` handles all metadata and SEO conten
 ## License
 
 [MIT](https://github.com/devfolioco/devfolio-gatsby-starter/blob/master/LICENSE)
+
+## Contributing 
+
+All you need to know for contributing to this project is basic **JavaScript**.
+
+You can visit the issues page to find some relevant issues to contribute to or feel free to open a new issue for something that you think can be improved.
+
