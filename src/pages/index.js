@@ -10,6 +10,8 @@ import Schedule from '@sections/Schedule';
 import Sponsors from '@sections/Sponsors';
 import Faq from '@sections/Faq';
 import Footer from '@sections/Footer';
+import Prizes from '@sections/Prizes';
+
 
 const IndexPage = () => (
   <Layout>
@@ -17,6 +19,7 @@ const IndexPage = () => (
     <Header />
     <About />
     <Gallery />
+    <Prizes/>
     <Schedule />
     <Sponsors />
     <Faq />
