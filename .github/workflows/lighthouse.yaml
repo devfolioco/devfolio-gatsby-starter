@@ -1,0 +1,26 @@
+name: Lighthouse CI performance check
+on: [push, pull_request]
+
+jobs:
+  performance_check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12.x
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build website
+        run: npm run build --if-present
+
+      - name: Run Lighthouse against public directory
+        uses: treosh/lighthouse-ci-action@v3
+        with:
+          uploadArtifacts: true
+          temporaryPublicStorage: true
+          configPath: './lighthouserc.json'
+          runs: 3
