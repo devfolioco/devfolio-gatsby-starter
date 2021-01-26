@@ -29,6 +29,29 @@ Cleanup cache (often fixes miscellaneous errors when run before `yarn dev`):
 ```
 yarn clean
 ```
+## developing with gatsby
+
+1. **Create a Gatsby site.**
+
+Use Gatsby CLI to create a new site, by running the following code.
+
+```sh
+gatsby new project https://github.com/devfolioco/devfolio-gatsby-starter
+```
+
+2. **Start developing.**
+
+Navigate into your new site's directory and start it up.
+
+```sh
+cd project
+gatsby develop
+```
+
+3. **Open the code and start customizing**
+
+Your site is now running at `http://localhost:8000`!
+
 
 ## Content
 
