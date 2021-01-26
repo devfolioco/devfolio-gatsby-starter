@@ -109,7 +109,7 @@ class Schedule extends React.PureComponent {
           </Tabs>
 
           <List>
-          <h2 style={{marginLeft: '0.2rem'}}>Day {activeDay}</h2>
+            <h2 style={{ marginLeft: '0.2rem' }}>Day {activeDay}</h2>
             {SCHEDULE[activeDay - 1].value.map(({ time, label }) => (
               <Item key={time}>
                 <Time>{time}</Time>
@@ -129,8 +129,8 @@ const Tabs = styled.div`
   grid-gap: 32px;
   justify-content: center;
   @media (max-width: ${props => props.theme.screen.sm}) {
-    grid-template-columns: 100%;
     grid-template-rows: auto;
+    grid-template-columns: repeat(auto-fill, 200px);
     grid-gap: 1em;
   }
 `;
