@@ -1,5 +1,14 @@
 # Devfolio gatsby-starter-landing
 
+
+![GitHub package.json version](https://img.shields.io/github/package-json/v/devfolioco/devfolio-gatsby-starter)
+[![GitHub issues](https://img.shields.io/github/issues-raw/devfolioco/devfolio-gatsby-starter?logo=github)](https://github.com/devfolioco/devfolio-gatsby-starter/issues) 
+[![GitHub pull requests](https://img.shields.io/github/issues-pr/devfolioco/devfolio-gatsby-starter?logo=git)](https://github.com/devfolioco/devfolio-gatsby-starter/pulls)
+[![License](https://img.shields.io/badge/license-MIT-yellowgreen)](https://github.com/devfolioco/devfolio-gatsby-starter/blob/master/LICENSE)
+[![Twitter__follow](https://img.shields.io/twitter/follow/devfolioco?style=social)](https://twitter.com/Devfolioco)
+[![PR_accepted](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)]()
+
+
 Kickstart landing page development with GatsbyJS
 
 [Live Demo](http://devfolio-gatsby-starter.surge.sh)
