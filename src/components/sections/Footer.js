@@ -35,7 +35,7 @@ const Footer = () => (
         alignItems: 'center',
       }}
     >
-      <Copyright>© Devfolio</Copyright>
+      <Copyright>Devfolio © {new Date().getFullYear()}</Copyright>
       <SocialIcons>
         {SOCIAL.map(({ icon: Icon, label, link }) => (
           <ExternalLink href={link} key={link} aria-label={label}><Icon aria-hidden={true} /></ExternalLink>
