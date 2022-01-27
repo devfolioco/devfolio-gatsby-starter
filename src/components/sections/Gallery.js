@@ -33,6 +33,11 @@ const GALLERY = [
     url: 'https://twitter.com/dan_abramov',
   },
   {
+    name: 'Boba Fett',
+    image: 'bobafett.jpeg',
+    url: 'https://twitter.com/BobaFett_',
+  },
+  {
     name: 'Yoda',
     image: 'yoda.jpeg',
     url: 'https://twitter.com/yodaism',
@@ -46,6 +51,11 @@ const GALLERY = [
     name: 'Darth Vader',
     image: 'darthvader.jpeg',
     url: 'https://twitter.com/darthvader',
+  },
+  {
+    name: 'Boba Fett',
+    image: 'bobafett.jpeg',
+    url: 'https://twitter.com/BobaFett_',
   },
 ];
 
